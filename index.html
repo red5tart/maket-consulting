@@ -21,66 +21,79 @@
   <link rel="icon" type="images/png" href="img/favicons/favicon192.png" sizes="192x192">
   <link rel="icon" type="images/png" href="img/favicons/favicon96.png" sizes="96x96">
   <link rel="icon" type="images/png" href="img/favicons/favicon16.png" sizes="16x16">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="scss/style.css"> 
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid">
-      <div class="row justify-content-between">
-        <div class="col-2">
-          <img src="img/logo-180-49.svg" alt="logopic" class="logo">
-        </div>
-        <div class="col-7">
-          <div class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item"><a href="#about">About</a></li>
-              <li class="navigation__item"><a href="#services">Services</a></li>
-              <li class="navigation__item"><a href="#why-we-best">Why we best</a></li>
-              <li class="navigation__item"><a href="#testimonials">Testimonials</a></li>
-              <li class="navigation__item"><a href="#contact">Contact</a></li>
-            </ul>  
-          </div>   
-          <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">lang</button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">French</a>
-              <a class="dropdown-item" href="#">Deutsch</a>
-              <a class="dropdown-item" href="#">Italiano</a>
-            </div>
-          </div>          
-        </div>
-      </div>      
-    </div>
-  </header>
+  <div class="main-bg">
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar">
+          <a class="navbar-brand" href="#"><img src="img/logo-180-49.svg" alt="logopic" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why we best</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-toggle_english" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">French</a>
+                  <a class="dropdown-item" href="#">Deutsch</a>
+                  <a class="dropdown-item" href="#">Italiano</a>
+                </div>
+              </li>         
+            </ul>
+          </div>
+        </nav>
+      </div>    
+    </header>
 
-  <!--БЛОК СЛАЙДЕРА-->
-  <div class="banner">
-    <div class="container-fluid">
-      <div class="banner__slide">
-        <div class="btn">
-          <button type="button">Previous</button>
-          <button type="button">Next</button>
+    <!--БЛОК СЛАЙДЕРА-->
+    <div class="banner">
+      <div class="container-fluid">
+        <div class="banner__slide">
+          <div class="btn">
+            <button type="button">Previous</button>
+            <button type="button">Next</button>
+          </div>
+      <!--САМ СЛАЙДЕР ДЛЯ КОПИРОВАНИЯ-->    
+          <div class="banner__content">
+            <h1>Consumer Product Consulting</h1>  
+            <a href="">Learn more</a>
+            <div></div>
+          </div>
+      <!--КОНЕЦ СЛАЙДЕРА-->
         </div>
-    <!--САМ СЛАЙДЕР ДЛЯ КОПИРОВАНИЯ-->    
-        <div class="banner__content">
-          <h1>Consumer Product Consulting</h1>  
-          <a href="">Learn more</a>
-          <div></div>
-        </div>
-    <!--КОНЕЦ СЛАЙДЕРА-->
       </div>
-    </div>
-  </div>      
-
+    </div>      
+  </div>
   <div class="block">
     <div class="container-fluid">
       <div class="row">
         <div class="col">
           <h2>take away the risk & you can do anything.</h2>
-          <p class="subtitle">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-          <p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor. justo sapien, tempus</p>
+          <p class="col_light_gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+          <p class="col_dark_gr">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor. justo sapien, tempus</p>
           <a href="">take a tour</a>
         </div>
         <div class="col">
@@ -91,7 +104,7 @@
     </div>
   </div>
 
-<!-- БЛОК С ГРАФИКОМ-->
+  <!-- БЛОК С ГРАФИКОМ-->
   <div class="block block_gray">
     <div class="container-fluid">
       <div class="row">
@@ -100,15 +113,15 @@
         </div>      
         <div class="col">
           <h2>Constructingthe  best in class global assets.</h2>
-          <p class="subtitle">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-          <p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies Morbi in ligula nibh.</p>
+          <p class="col_light_gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+          <p class="col_dark_gr">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies Morbi in ligula nibh.</p>
           <a href="">take a tour</a>
         </div>
       </div>
     </div>
   </div>
 
-<!--БЛОК С КНОПКОЙ КОНТАКТОВ-->
+  <!--БЛОК С КНОПКОЙ КОНТАКТОВ-->
   <div class="block block_blue">
     <div class="container-fluid">
       <div class="row">
@@ -122,12 +135,12 @@
     </div>
   </div>
 
-<!--БЛОК ВИДЫ УСЛУГ-->
-  <div class="block">
+  <!--БЛОК ВИДЫ УСЛУГ-->
+  <div class="block text-center">
     <div class="container-fluid">
       <h2>Popular Services</h2>
-      <p class="subtitle">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-      <div class="row">
+      <p class="col_light_gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+      <div class="row row-description text-left">
         <div class="col">
           <img src="img/cons-370-190.png" alt="consulting pic">
           <h3>Turnaround Consulting</h3>
@@ -147,8 +160,8 @@
     </div>
   </div>
 
-<!--БЛОК СЧЕТЧИКИ-->
-  <div class="block block_bg">
+  <!--БЛОК СЧЕТЧИКИ-->
+  <div class="block block_bg text-center">
     <div class="container-fluid">
       <div class="row">
         <div class="col">
@@ -166,7 +179,7 @@
     </div>
   </div>
 
-<!--БЛОК БЕСТ-->
+  <!--БЛОК БЕСТ-->
   <div class="block">
     <div class="container-fluid">
       <div class="row">
@@ -176,16 +189,16 @@
         </div>  
         <div class="col">
           <h2>Why  we best Consulting office in london ?</h2>
-          <p class="subtitle">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-          <p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+          <p class="col_light_gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+          <p class="col_dark_gr">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
           justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.</p>
           <a href="">our services</a>
         </div>
       </div>
     </div>
   </div>
-<!--БЛОК ОТЗЫВОВ-->
-  <div class="block block_review">
+  <!--БЛОК ОТЗЫВОВ-->
+  <div class="block block_review text-center">
     <div class="container-fluid">
       <div>
         <div class="blockquotes"></div>
@@ -197,14 +210,14 @@
     </div>
   </div>
 
-<!--ПОДВАЛ С КАРТАМИ-->
-<!---->
+  <!--ПОДВАЛ С КАРТАМИ-->
+  <!---->
   <footer>
-    <div class="block">
+    <div class="block text-center">
       <div class="container-fluid">
         <h2>Contact with us</h2>
-        <p class="subtitle">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
-        <div class="row">
+        <p class="col_light_gr">Rapid solutions to the most complex business challenges with cooperative process-driven.</p>
+        <div class="row text-left">
           <div class="col">
             <img src="#" alt="HQ map">
             <h3>Head Quarter</h3>
@@ -254,29 +267,29 @@
   </footer>
 
   
-<!-- Modal Contact Form -->
-<div class="modal fade" id="ModalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p><input class="form-control" type="text" placeholder="Your name"></p>
-        <p><input class="form-control" type="text" placeholder="Company name"></p>
-        <p><input class="form-control" type="email" placeholder="Email"></p>
-        <p><textarea class="form-control" name="" placeholder="Your comment"></textarea></p> 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+  <!-- Modal Contact Form -->
+  <div class="modal fade" id="ModalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><input class="form-control" type="text" placeholder="Your name"></p>
+          <p><input class="form-control" type="text" placeholder="Company name"></p>
+          <p><input class="form-control" type="email" placeholder="Email"></p>
+          <p><textarea class="form-control" name="" placeholder="Your comment"></textarea></p> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
