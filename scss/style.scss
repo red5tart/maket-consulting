@@ -108,23 +108,59 @@ body {
 	align-items: center;
 }
 .banner {
-	padding: 50px 0;
+	padding: 286px 0 290px 0; 
 	&__slide {
 		display: flex;
 		justify-content: space-between;
 	}
+	&__content, &__btn {
+		align-self: center;
+	}
+	&__bord {
+	    border: 10px solid $yellow;
+	    display: block;
+	    width: 300px;
+	    height: 378px;
+	    position: absolute;
+	    right: 0; 
+	    top: -80px;		
+	}
+	&__rect {
+	    background-color: #021d3a;
+	    display: block;
+	    width: 10px;
+	    height: 224px;
+	    position: absolute;
+	    right: 290px;
+	    top: 3px;		
+	}
 	&__content {
+		text-align: right;
+	    max-width: 600px;
+	    padding-right: 223px;
+	    position: relative;
 		h1 {
 			color: $white;
-			font-size: 51px;
-			font-weight: 700;
-			line-height: 51px;
+		    font-size: 51px;
+		    font-weight: 700;
+		    line-height: 51px;
+		    text-align: right;
+		    letter-spacing: -0.8px;
+		    margin: 0px 0 36px 0;
+		    position: relative;
 		}
 		a {
 			color: $yellow;
 			font-size: 21px;
 			font-weight: 700;
-			text-transform: uppercase;
+			border-bottom: 2px solid transparent;
+			transition: 0.3s;
+			position: relative;
+			&:hover {
+				text-decoration: none;
+				color: $white;
+				border-bottom: 2px solid $white;
+			}
 		}
 	}
 	button {
@@ -137,7 +173,7 @@ body {
 		background-color: transparent;
 		border: none;
 		position: relative;
-		transition: 0.3px;
+		transition: 0.3s;
 		&:focus {
 			outline:none;
 		}
